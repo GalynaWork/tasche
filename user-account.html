@@ -1915,93 +1915,186 @@
     </aside>
 </div>
 <main>
-    <div class="content-wrapper p_order">
+    <div class="content-wrapper user-account">
 
         <div class="container">
             <div class="upp">
                 <div class="upp__title">
-                    Регистрация
+                    Личный кабинет
                 </div>
-                <div class="uforms uforms_registration styled-forms"><!-- user-form pages -->
-                    <form class="uforms__body"  novalidate="">
-                        <div class="uforms__error-text">
-                            Логин должен быть не менее 3 символов.<br>Пароль должен  быть не менее 6 символов длиной.<br>Неверный E-Mail.<br>
-                        </div>
-                        <div class="uforms__row">
-                            <div class="uforms__row-title">
-                                Логин: <span class="uforms__required-mark">*</span>
-                            </div>
-                            <div class="uforms__content">
-                                <div class="uforms__input-block">
-                                    <input type="text" name="USER_LOGIN" maxlength="50" value="">
+                <div class="upp__hmenu">
+                    <li class="upp__hmenu-item active">
+                        <a class="upp__hmenu-link" href="user-account.html">Учетная запись</a>
+                    </li>
+                    <li class="upp__hmenu-item">
+                        <a class="upp__hmenu-link" href="order-list.html">Мои заказы</a>
+                    </li>
+                    <li class="upp__hmenu-item">
+                       <a class="upp__hmenu-link">Изменить подписку</a>
+                    </li>
+                </div>
+                <div class="upp__subtitle">
+                    Данные учетной записи
+                </div>
+                <div class="upp__cols">
+                    <div class="upp__cols-left">
+                        <div class="uforms uforms_account styled-forms"><!-- user-form pages -->
+                        <form class="uforms__body"  novalidate="">
+                            <div class="uforms__error-text"></div>
+                            <div class="uforms__row">
+                                <div class="uforms__row-title">
+                                    Имя:
                                 </div>
-                                <div class="uforms__user-tip">
-                                    — не менее 3-х символов
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uforms__row">
-                            <div class="uforms__row-title">
-                                Пароль: <span class="uforms__required-mark">*</span>
-                            </div>
-                            <div class="uforms__content">
-                                <div class="uforms__input-block">
-                                    <input type="password" name="USER_PASSWORD" maxlength="50" value="">
-                                </div>
-                                <div class="uforms__user-tip">
-                                    — не менее 6-х символов
-                                </div>
-                            </div>
-                        </div>
-                        <div class="uforms__row">
-                            <div class="uforms__row-title">
-                                Подтверждение пароля: <span class="uforms__required-mark">*</span>
-                            </div>
-                            <div class="uforms__content">
-                                <div class="uforms__input-block">
-                                    <input type="password" name="USER_CONFIRM_PASSWORD" maxlength="50" value="">
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <input type="text" name="USER_LOGIN" maxlength="50" value="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="uforms__row">
-                            <div class="uforms__row-title">
-                                E-mail: <span class="uforms__required-mark">*</span>
-                            </div>
-                            <div class="uforms__content">
-                                <div class="uforms__input-block">
-                                    <input type="text" name="USER_EMAIL" maxlength="255" value="">
+                            <div class="uforms__row">
+                                <div class="uforms__row-title">
+                                    Фамилия:
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <input type="text" name="USER_LOGIN" maxlength="50" value="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="uforms__row">
-                            <div class="uforms__row-title">
-                                Введите слово на картинке: <span class="uforms__required-mark">*</span>
-                            </div>
-                            <div class="uforms__content uforms__content_captcha">
-                                <div class="uforms__input-block uforms__input-block_captcha">
-                                    <img class="uforms__captch-img" src="./img/captcha.jpg" alt="CAPTCHA">
-                                    <input type="text" name="USER_EMAIL" maxlength="255" value="">
+                            <div class="uforms__row">
+                                <div class="uforms__row-title">
+                                    Отчество:
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <input type="text" name="USER_LOGIN" maxlength="50" value="">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="uforms__submit-area">
-                            <div class="uforms__required-label">
-                                <span class="uforms__required-mark">*</span> — обязательные поля
+                            <div class="uforms__row">
+                                <div class="uforms__row-title">
+                                    Электронная почта: <span class="uforms__required-mark">*</span>
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <input type="text" name="USER_LOGIN" maxlength="50" value="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="uforms__checkbox-row">
-                                <label class="uforms__checkbox-block">
-                                    <input type="checkbox" checked="checked" class="uforms__checkbox-input">
-                                    <div class="uforms__checkbox-icon">&nbsp;</div>
-                                    <span class="uforms__checkbox-label">Я принимаю условия</span>
-                                </label>
-                                <a href="#" class="upp__link">Пользовательского&nbsp;соглашения</a>
+                            <div class="uforms__row">
+                                <div class="uforms__row-title">
+                                    Телефон:
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <input type="text" name="USER_LOGIN" maxlength="50" value="">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="uforms__submit-block">
-                                <button type="submit" name="USER_SUBMIT">Зарегистрироваться</button>
+                            <div class="uforms__row">
+                                <div class="uforms__row-title">
+                                    Логин (минимум 3 символа): <span class="uforms__required-mark">*</span>
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <input type="password" name="USER_PASSWORD" maxlength="50" value="">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="uforms__row">
+                                <div class="uforms__row-title">
+                                    Новый пароль:
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <input type="text" name="USER_LOGIN" maxlength="50" value="">
+                                    </div>
+                                    <div class="uforms__user-tip">
+                                        — не менее 6-х символов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uforms__row">
+                                <div class="uforms__row-title">
+                                    Подтверждения нового пароля:
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <input type="text" name="USER_LOGIN" maxlength="50" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uforms__row">
+                                <div class="uforms__row-title">
+                                    Номер накопительной карты:
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <input type="text" name="USER_LOGIN" maxlength="50" value="">
+                                    </div>
+                                    <div class="uforms__user-tip">
+                                        — карта с таким номером не найдена
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uforms__row uforms__row_checkbox">
+                                <div class="uforms__row-title">
+                                    Хочу получать sms-уведомления:
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <label class="uforms__checkbox-block">
+                                            <input type="checkbox" class="uforms__checkbox-input">
+                                            <div class="uforms__checkbox-icon">&nbsp;</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uforms__row uforms__row_checkbox">
+                                <div class="uforms__row-title">
+                                    Показать историю просмотров:
+                                </div>
+                                <div class="uforms__content">
+                                    <div class="uforms__input-block">
+                                        <label class="uforms__checkbox-block">
+                                            <input type="checkbox" class="uforms__checkbox-input">
+                                            <div class="uforms__checkbox-icon">&nbsp;</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uforms__submit-area">
+                                <div class="uforms__required-label">
+                                    <span class="uforms__required-mark">*</span> — обязательные поля
+                                </div>
+                                <div class="uforms__submit-block">
+                                    <button type="submit" name="USER_SAVE">Сохранить</button>
+                                </div>
+                            </div>
 
-                    </form>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="upp__cols-right">
+                        <div class="upp__target-block">
+                            <div class="upp__target-label">
+                                <a class="upp__link upp__link_red" href="#">Накопительные скидки</a>
+                            </div>
+                            <div class="upp__target-content">
+                                Для получения 5%-накопительной карты скидок добавьте в корзину товар на сумму от 10 000 ₽
+                            </div>
+                        </div>
+                        <div class="upp__target-block">
+                            <div class="upp__target-label">
+                                Ваш менеджер - Петрова Ольга
+                            </div>
+                            <div class="upp__target-content">
+                                Телефон: +7&nbsp;(495) 787 87 41, доб. 201,<br>
+                                Электронная почта <a class="upp__link" href="mailto:tasche@shop.ru">tasche@shop.ru</a>,<br>
+                                Скайп: <a class="upp__link" href="skype:tascheshop?chat"><i class="fab fa-skype"></i>tascheshop</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
